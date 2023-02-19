@@ -8,7 +8,7 @@ DAT = $(wildcard *.dat)
 all: ${EXEC} clean
 
 ${EXEC}: ${SRC} mnist_data
-	${CC} ${CFLAGS} ${SRC} -o ${EXEC}
+	${CC} ${CFLAGS} ${SRC} -o ${EXEC} -lm
 
 mnist_data:
 	cd $@

@@ -1,0 +1,9 @@
+set term pngcairo
+
+set output 'learning_curve.png'
+set xlabel 'Itérations'
+set ylabel "% d'erreur sur l'échantillon"
+set yrange [-0.5:1.5]
+plot 'learning_curve.dat' with lines title "Apprentissage"
+
+set term x11
