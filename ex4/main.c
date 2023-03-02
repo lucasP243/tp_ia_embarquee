@@ -4,7 +4,7 @@
 #include "mnist_data_handler.h"
 #include "neural_network.h"
 
-#define SAMPLING_SIZE 100
+#define SAMPLING_SIZE 600
 
 size_t get_max_index(const float *array, const size_t array_size)
 {
